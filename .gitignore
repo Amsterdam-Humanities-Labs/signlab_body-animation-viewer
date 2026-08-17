@@ -1,0 +1,26 @@
+# --- credentials: never commit ---
+.env
+.env.*
+!.env.example
+mysql_config.php
+mysql_config_test.php
+mysql_config.example.php.keep
+config.php
+config.php.backup*
+*.pem
+*.key
+
+# --- dependencies ---
+node_modules/
+vendor/
+
+# --- logs, caches, os cruft ---
+*.log
+logs/
+.DS_Store
+Thumbs.db
+
+# --- large assets excluded from git (GitHub rejects >100MB) ---
+/CNGT1592_S067_b_720.mp4
+/CNGT0254_S014_b_720.mp4
+/CNGT0476_S024_b_720.mp4
