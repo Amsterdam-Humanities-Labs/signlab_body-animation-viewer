@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/sc_paths.php';
 header('Content-Type: application/json');
 
 $action = $_GET['action'] ?? '';
@@ -100,7 +101,7 @@ if ($action === 'glossmap' && $_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 
     // Build gloss map from DB
-    require '/web/mysql_config.php';
+    require sc_path('mysql_config.php');
     $conn = new mysqli($servername, $username, $password, $database);
     if ($conn->connect_error) {
         http_response_code(500);
@@ -186,7 +187,7 @@ if ($action === 'glossmap' && $_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 // Parse VTT file: merge all segments into one [start, end] in seconds
-$vttDir = '/web/gebarenoverleg_media/studioFilesMini/raw/';
+$vttDir = sc_dir('media_raw');
 function parseVttSegment($animFile) {
     global $vttDir;
     $base = preg_replace('/_anim\.glb$/i', '', $animFile);
@@ -239,7 +240,7 @@ if ($action === 'senseindex' && $_SERVER['REQUEST_METHOD'] === 'GET') {
         exit;
     }
 
-    require '/web/mysql_config.php';
+    require sc_path('mysql_config.php');
     $conn = new mysqli($servername, $username, $password, $database);
     if ($conn->connect_error) {
         http_response_code(500);
