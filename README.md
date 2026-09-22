@@ -21,7 +21,7 @@ chown www-data /web/s3b_glb                                # api.php writes its 
 First request after a deploy rebuilds the caches (slow).
 
 ## Configuration
-- `/web/mysql_config.php`, required by absolute path.
+- `<root>/mysql_config.php`; `<root>` comes from vendored `sc_paths.php` (from signlab_signcollect-lib; edit it there): `SC_WEB_ROOT`, default `/web`.
 - Not in git: `*_cache.json` (safe to delete) and three CNGT 720p reference MP4s (~550 MB) on the server.
 
 ## Dependencies
