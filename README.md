@@ -1,4 +1,4 @@
-# signlab_s3b_glb
+# signlab_body-animation-viewer
 Babylon.js viewer for GLB body animations reconstructed from SignCollect recordings, with gloss and sense search.
 
 ## What it does
@@ -26,5 +26,5 @@ The first request after a deploy rebuilds the caches, which is slow.
 
 ## Dependencies
 - MySQL `admin_gebarenoverleg`, read-only: `matched_transcriptions`, `form_data`, `sentences`, `nmm_data`.
-- VTT sidecars in `/web/gebarenoverleg_media/studioFilesMini/raw/`, shared with [signlab_s3b_server](https://github.com/Amsterdam-Humanities-Labs/signlab_s3b_server).
+- VTT sidecars in `/web/gebarenoverleg_media/studioFilesMini/raw/`, shared with [signlab_sam3d-body-queue](https://github.com/Amsterdam-Humanities-Labs/signlab_sam3d-body-queue).
 - Babylon.js from `cdn.babylonjs.com`, version not pinned.
