@@ -3,7 +3,7 @@ Babylon.js viewer for GLB body animations reconstructed from SignCollect recordi
 
 ## What it does
 - `index.html`: search by gloss or file name and load the matching GLBs from `s3d_files/`. Each clip plays trimmed to its VTT segment. You can queue signs into a sentence.
-- `gs.html` (Gebarenstrand): a fixed manifest of 5,428 GLBs with readable names. `gebarenstrand_to_m.json` maps them to `M…` ids. Clips play in full.
+- `gebarenstrand.html` (old name `gs.html` redirects here): a fixed manifest of 5,428 GLBs with readable names. `gebarenstrand_to_m.json` maps them to `M…` ids. Clips play in full.
 - `api.php?action=`: `list&q=` (up to 100 GLB names by gloss or file name), `glossmap`, `senseindex`, `vttset`, and `upload` (POST one `.glb` into `s3d_files/`). `glossmap`, `senseindex` and `vttset` cache their result in `*_cache.json` for a week; `list` searches the gloss cache and the disk.
 
 ## Where it runs
