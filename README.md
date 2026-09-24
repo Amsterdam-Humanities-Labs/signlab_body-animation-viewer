@@ -28,3 +28,10 @@ The first request after a deploy rebuilds the caches, which is slow.
 - MySQL `admin_gebarenoverleg`, read-only: `matched_transcriptions`, `form_data`, `sentences`, `nmm_data`.
 - VTT sidecars in `/web/gebarenoverleg_media/studioFilesMini/raw/`, shared with [signlab_sam3d-body-queue](https://github.com/Amsterdam-Humanities-Labs/signlab_sam3d-body-queue).
 - Babylon.js from `cdn.babylonjs.com`, version not pinned.
+
+## License and citation
+
+Apache License 2.0, copyright University of Amsterdam: see [LICENSE](LICENSE) and
+[NOTICE](NOTICE). You may use it, also commercially, as long as you credit
+Gomer Otterspeer / University of Amsterdam as the source. To cite it, use
+[CITATION.cff](CITATION.cff) (the *Cite this repository* button on GitHub) or the DOI [10.21942/uva.33980311](https://doi.org/10.21942/uva.33980311).
